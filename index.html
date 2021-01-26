@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width"/>
+    <title>Guess My Number</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- End -->
+  </head>
+  <body>
+    <div class="overlay hidden">
+      <div class="tip hidden">
+        <button class="close_btn">&times;</button>
+        <p class="game_rules text-center">
+          <h4>Instructions</h4>
+          <hr class="hr">
+          -> Initially, The number will lie between 1 to 5 which is initial
+          level of the game called level 1. <br />
+          -> After level 1, the game will add 5 more numbers to it and then the
+          number will lie between 1 to 10 and so on. <br />
+          -> If you fail to guess number in 5 chances, then the game will
+          over.<br />
+          <label class="enjoy">Enjoy The Game! Good Luck :)</label>
+          <div class="text-center">
+            <h6>Special Thanks to Technologies</h6>
+            <img class="tech-icons" src="./icons/html.png" alt="HTML">
+          <img class="tech-icons" src="./icons/css.png" alt="CSS">
+          <img class="tech-icons" src="./icons/js.png" alt="JavaScript">
+          </div>
+        </p>
+      </div>
+    </div>
+    <div class="alert" role="alert">
+      Welcome to the game! You can check out the instructions before playing it.
+      <button class="btn btn-sm btn-primary info">Instructions</button>
+      <button class="btn btn-sm btn-secondary dark_mode">Dark Mode</button>
+      <button class="btn btn-sm btn-light light_mode hidden">Light Mode</button>
+    </div>
+
+    <div class="jumbotron text-center">
+      <h1 class="game-name">GUESS MY NUMBER!</h1>
+      <div class="version_info">
+        <p>
+          version: v0.8.1 :: last updated: Jan 26, 2021
+        </p>
+      </div>
+      <div class="developer_info">
+        <p>Developed by PUSHKAR SHARMA</p>
+      </div>
+      <div class="score_and_level">
+        LEVEL
+        <span class="level_info">1</span>
+        &nbsp; SCORE
+        <span class="score_info">0</span>
+        &nbsp; HIGH SCORE
+        <span class="high_score_info">0</span>
+      </div>
+      <br />
+      <div class="hint_div">
+        Hint: guess the number between 1 to
+        <span class="hint">5</span>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="text-center">
+            <h1 class="number">?</h1>
+          </div>
+          <div class="user-input text-center">
+            <input type="number" class="guess" placeholder="Click here to enter" required />
+          </div>
+          <br />
+          <div class="text-center">
+            <label id="guessLabel" class="message">Start guessing...</label>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-primary btn-md check">Check</button>
+            <button class="btn btn-primary btn-md start_again">
+              Start Again
+            </button>
+          </div>
+          <br />
+          <div class="text-center">
+            <label class="chances_message">You have 5 chances</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
